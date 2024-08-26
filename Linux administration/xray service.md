@@ -200,3 +200,28 @@ export https_proxy=http://127.0.0.1:2081
 export frp_proxy=http://127.0.0.1:2081
 export socks_proxy=http://127.0.0.1:2080
 ```
+
+## Use it as a proxy
+If ufw is enabled
+```shell
+sudo ufw allow 2080/tcp
+sudo ufw allow 2081/tcp
+```
+For iptables
+```shell
+sudo iptables -A INPUT -p tcp --dport 2080 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 2081 -j ACCEPT
+```
+and save iptables
+```shell
+sudo iptables-save > /etc/iptables/rules.v4
+```
+
+For SOCKS proxy:
+```shell
+export SOCKS_PROXY="socks5://<IP-adress>:2080"
+```
+For HTTP proxy:
+```shell
+export http_proxy="http://<IP-adress>:2081"
+```
