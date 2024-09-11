@@ -1,8 +1,8 @@
 # Xray-client в терминале linux.
 
 ## Install xray
-I used: <u>XTLS</u> <https://github.com/XTLS/Xray-install> and
-<u>easy-xray</u> <https://github.com/EvgenyNerush/easy-xray/blob/main/README.ru.md#linux-1>
+I used: [XTLS](https://github.com/XTLS/Xray-install) and
+[easy-xray](https://github.com/EvgenyNerush/easy-xray/blob/main/README.ru.md#linux-1)
 
 *  At first, we need to download XTLS from the repository [XTLS/Xray-install](https://github.com/XTLS/Xray-install).
 
